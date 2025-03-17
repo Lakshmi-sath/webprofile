@@ -1,0 +1,153 @@
+@media (max-width: 900px) {
+	header {
+		display: none;
+	}
+
+	/* <-- -------------------------
+--------- # NAVBAR # -----------
+------------------------------ --> */
+
+	.links {
+		display: none;
+		flex-direction: column;
+		margin-top: 3rem;
+		margin-right: 2rem;
+		font-weight: 500;
+		align-items: center;
+		justify-content: center;
+	}
+
+	body.menu-active .links {
+		display: flex;
+		z-index: 1000;
+	}
+
+	body.menu-active .box::after {
+		background: #f8eded;
+	}
+
+	body.menu-active .nav-items a:hover {
+		color: var(--main-color-3);
+	}
+
+	.button {
+		display: block;
+		position: absolute;
+		right: 10px;
+		top: 20px;
+		z-index: 1000;
+	}
+
+	html.menu-active,
+	body.menu-active {
+		overflow: hidden;
+	}
+
+	.overlay {
+		position: fixed;
+		z-index: 1;
+		inset: 0;
+		opacity: 0;
+		visibility: hidden;
+		transition: 0.3s;
+	}
+
+	body.menu-active .overlay {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	#menu {
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		visibility: hidden;
+		opacity: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: #f9f9f9;
+		background: #f8eded;
+		transition-duration: 0.3s;
+	}
+
+	body.menu-active #menu {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	/* <-- -------------------------
+--------- # ABOUT # -----------
+------------------------------ --> */
+
+	.about h1 {
+		font-size: 3rem;
+	}
+
+	.about h5 {
+		margin-bottom: 2rem;
+	}
+
+	.about .front-end {
+		font-size: 3.5rem;
+	}
+
+	.about .about-para {
+		width: 92%;
+		font-size: 0.8rem;
+		line-height: 1.3rem;
+	}
+
+	.about .icons a {
+		text-decoration: none;
+	}
+
+	/* <-- -------------------------
+---- # SKILLS AND PROJECTS # -----
+------------------------------ --> */
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.skills-projects {
+		padding: 2rem;
+	}
+
+	.projects {
+		margin-top: 0;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.projects h2 {
+		font-size: 2.3rem;
+		margin-top: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.projects::before {
+		border-width: 20px;
+	}
+
+	.all-projects,
+	.frontend-projects {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.project-card + .project-card {
+		margin-top: -80%;
+		margin-left: 0;
+	}
+
+	.project-card:hover ~ .project-card {
+		translate: 0;
+		transform: translateY(120px);
+	}
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lakshmi.S</title>
+
+		<!-- ----------------------------
+  ----------- #CSS LINK# ----------
+  --------------------------------- -->
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="media.css" />
+
+		<!-- ----------------------------
+  -------- #GOOGLE FONTS# ---------
+  --------------------------------- -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet" />
+
+		<!-- ----------------------------
+  -------- #FONT AWESOME# ---------
+  --------------------------------- -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+	</head>
+	<body class="view">
+		<!-- -------------------------------
+  ----------- #ADDRESS LINKS# --------
+  --------------------------------- -->
+		<header>
+			<div class="phone">
+				<i class="fa-solid fa-phone"></i>
+				<span>6305690034</span>
+			</div>
+
+			<div class="separator">
+				<i class="fa-solid fa-diamond"></i>
+			</div>
+
+			<div class="mail">
+				<i class="fa-solid fa-envelope"></i>
+				<span class="mail">satharaboinalakshmi@gmail.com</span>
+			</div>
+
+			<div class="separator">
+				<i class="fa-solid fa-diamond"></i>
+			</div>
+
+			<div class="address">
+				<i class="fa-solid fa-location-dot"></i>
+				<span class="address">C9 402, Singapoor Township, Ghatkesar, Hyderabad(500088)</span>
+			</div>
+		</header>
+		<hr />
+
+		<!-- -----------------------------
+  ------------- #NAVBAR# -----------
+  --------------------------------- -->
+		<nav class="nav-items">
+			<div>
+				<div class="overlay"></div>
+				<div id="menu"></div>
+				<button onclick="handleClick()" class="button">
+					<span class="menu">
+						<svg viewBox="0 0 32 32">
+							<path
+								class="line line-top-bottom"
+								d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+							<path class="line" d="M7 16 27 16"></path>
+						</svg>
+					</span>
+				</button>
+			</div>
+			<div class="links">
+				<div class="box">
+					<div class="content">
+						<figure><img src="Images/profile-2.png" alt="" /></figure>
+					</div>
+				</div>
+
+				<a href="#about" style="animation-delay: 0.1s;" >About</a>
+				<a href="#skills" style="animation-delay: 0.5s;" >Technical Skills</a>
+				<a href="#projects" style="animation-delay: 0.7s;" >Projects</a>
+			</div>
+		</nav>
+
+		<!-- ----------------------------
+  ------------- #ABOUT# -----------
+  --------------------------------- -->
+		<section class="about" id="about">
+			<h5><span class="hi">Hi,</span> I am <span class="name">Lakshmi</span>.</h5>
+			<h1>a <span class="front-end">Front-end</span> Developer!</h1>
+			<p class="about-para">
+				Self-taught Front-End Developer passionate about creating responsive and interactive web
+				experiences. Skilled in HTML, CSS, JavaScript, and React, I focus on building user-friendly
+				and visually appealing interfaces. Continuously learning and improving, I strive to turn
+				ideas into functional, dynamic websites.
+			</p>
+			<div class="icons">
+				<a href="Satharaboina Lakshmi.pdf" download="Satharaboina Lakshmi">
+					<button class="d-btn">
+						Download CV <i class="fa-regular fa-circle-down"></i>
+						<div class="hoverEffect">
+							<div></div>
+						</div></button
+				></a>
+			</div>
+		</section>
+
+		<!-- -------------------------------
+  ------------- #PROJECTS# -----------
+  --------------------------------- -->
+		<section class="skills-projects">
+			<div class="skills" id="skills">
+				<h3 class="skill-heading">My Skills</h3>
+				<span class="skills-span">HTML</span>
+				<span class="skills-span">CSS</span>
+				<span class="skills-span">JavaScript</span>
+				<span class="skills-span">ReactJS</span>
+				<span class="skills-span">Python</span>
+				<span class="skills-span">PostgreSQL</span>
+			</div>
+
+			<div class="projects" id="projects">
+				<h2>Projects</h2>
+				<div class="all-projects">
+					<div class="project-card">
+						<a href="https://3deffect-girl-lucky.netlify.app/" target="_blank"
+							><img src="Images/3D girl.png" alt=""
+						/></a>
+					</div>
+
+					<div class="project-card">
+						<a href="https://rockpaperscissorsint.netlify.app/" target="_blank"
+							><img src="Images/Rock Paper Scissors.png" alt="Rock Paper Scissors"
+						/></a>
+					</div>
+
+					<div class="project-card">
+						<a href="https://tictactoe-game-lucky.netlify.app/" target="_blank"
+							><img src="Images/Tic Tac Toe Game.png" alt="Tic Tac Toe"
+						/></a>
+					</div>
+
+					<div class="project-card">
+						<a href="https://lead-tracker-chromeextention.netlify.app/" target="_blank"
+							><img src="Images/Chrome Extention.png" alt="Lead Tracker Chrome Extention"
+						/></a>
+					</div>
+
+					<div class="project-card active">
+						<a href="https://practice-resturant.netlify.app/" target="_blank">
+							<img src="Images/Resturant-webpage.png" alt="Resturant Webpage"
+						/></a>
+					</div>
+				</div>
+
+				<h3 class="h3">Frontend Mentor Challenges</h3>
+				<div class="frontend-projects">
+					<div class="project-card">
+						<a href="https://chatappillustration-lucky.netlify.app/" target="_blank"
+							><img src="Images/Chat Illustration.png" alt="Chat Illustartion"
+						/></a>
+					</div>
+
+					<div class="project-card">
+						<a href="https://responsiveproductpreviewcard.netlify.app/" target="_blank"
+							><img src="Images/Product Preview Card.png" alt="Product Preview Card"
+						/></a>
+					</div>
+
+					<div class="project-card">
+						<a href="https://nft-preview-card-lucky.netlify.app/" target="_blank">
+							<img src="Images/NFT Preview Card.png" alt="NFT Preview Card"
+						/></a>
+					</div>
+
+					<div class="project-card">
+						<a href="https://order-summary-component-lucky.netlify.app/" target="_blank"
+							><img src="Images/Order Summary Component.png" alt="Order Summary"
+						/></a>
+					</div>
+
+					<div class="project-card active">
+						<a href="https://interactive-rating-component-lucky.netlify.app/" target="_blank"
+							><img src="Images/Rating Component.png" alt="Rating Component"
+						/></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ----------------------------
+  ----------- #JS LINK# -----------
+  --------------------------------- -->
+		<script src="script.js"></script>
+	</body>
+</html>
